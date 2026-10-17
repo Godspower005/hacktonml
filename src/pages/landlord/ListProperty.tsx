@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Field, Layout, PrimaryButton, inputClass } from '../../components/Layout';
 import { MapView } from '../../components/MapView';
 import { emptyLandlordDraft, loadDraft, saveDraft } from '../../state/session';
+import { safeFetchJson } from '../../utils/api';
 
 function fileToDataUrl(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -20,8 +21,7 @@ export default function ListProperty() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('/api/neighborhoods')
-      .then((r) => r.json())
+    safeFetchJson('/api/neighborhoods')
       .then((d) => {
         if (d.success) setAreas(d.data);
       })

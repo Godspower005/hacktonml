@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, PrimaryButton } from '../../components/Layout';
 import { clearDraft, loadDraft } from '../../state/session';
+import { safeFetchJson } from '../../utils/api';
 
 export default function Published() {
   const [id, setId] = useState<string | null>(null);
@@ -10,12 +11,11 @@ export default function Published() {
 
   useEffect(() => {
     const draft = loadDraft();
-    fetch('/api/listings', {
+    safeFetchJson('/api/listings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(draft),
     })
-      .then((r) => r.json())
       .then((d) => {
         if (!d.success) throw new Error(d.error || 'Publish failed');
         setId(d.data.id);

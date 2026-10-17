@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Field, Layout, PrimaryButton, inputClass } from '../../components/Layout';
 import { loadSeeker, saveSeeker } from '../../state/session';
+import { safeFetchJson } from '../../utils/api';
 
 export default function InfoSheet() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function InfoSheet() {
     const profile = { ...existing, fullName: fullName.trim(), phone: phone.trim(), email: email.trim() };
     saveSeeker(profile);
     try {
-      await fetch('/api/seekers', {
+      await safeFetchJson('/api/seekers', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profile),

@@ -13,6 +13,7 @@ import {
   AlertTriangle
 } from 'lucide-react';
 import type { NeighborhoodGuideResult } from '../../lib/gemma';
+import { safeFetchJson } from '../utils/api';
 
 interface NeighborhoodGuideModalProps {
   neighborhoodName: string | null;
@@ -34,11 +35,7 @@ export const NeighborhoodGuideModal: React.FC<NeighborhoodGuideModalProps> = ({
     setIsLoading(true);
     setError(null);
 
-    fetch(`/api/ai/neighborhood-guide?name=${encodeURIComponent(neighborhoodName)}`)
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-        return res.json();
-      })
+    safeFetchJson(`/api/ai/neighborhood-guide?name=${encodeURIComponent(neighborhoodName)}`)
       .then(data => {
         if (isMounted) {
           if (data.success && data.data) {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { X, CheckCircle2, AlertTriangle, Coins, Database, RefreshCw } from 'lucide-react';
 import type { Property } from '../../lib/scoring';
 import type { InspectionAdvisoryResult } from '../../lib/gemma';
+import { safeFetchJson } from '../utils/api';
 
 interface InspectionAdvisoryModalProps {
   property: Property | null;
@@ -23,11 +24,7 @@ export const InspectionAdvisoryModal: React.FC<InspectionAdvisoryModalProps> = (
     setIsLoading(true);
     setError(null);
 
-    fetch(`/api/ai/property-advisory/${property.id}`)
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-        return res.json();
-      })
+    safeFetchJson(`/api/ai/property-advisory/${property.id}`)
       .then(data => {
         if (isMounted) {
           if (data.success && data.data) {

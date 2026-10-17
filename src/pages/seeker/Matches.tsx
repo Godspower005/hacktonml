@@ -4,6 +4,7 @@ import { Layout } from '../../components/Layout';
 import { loadSeeker } from '../../state/session';
 import { formatNaira, type PropertyScoreResult } from '../../../lib/scoring';
 import { IbadanMap } from '../../components/IbadanMap';
+import { safeFetchJson } from '../../utils/api';
 
 export default function Matches() {
   const navigate = useNavigate();
@@ -19,12 +20,11 @@ export default function Matches() {
       return;
     }
     setLoading(true);
-    fetch('/api/match', {
+    safeFetchJson('/api/match', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ profile }),
     })
-      .then((r) => r.json())
       .then((d) => {
         if (!d.success) throw new Error(d.error || 'Match failed');
         setResults(d.data);
