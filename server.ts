@@ -351,7 +351,7 @@ app.get('/api/cache-stats', (_req: Request, res: Response) => {
 });
 
 // API 404 handler to prevent HTML responses for missing /api endpoints
-app.use('/api/*', (_req: Request, res: Response) => {
+app.all(['/api', '/api/*'], (_req: Request, res: Response) => {
   res.status(404).json({ success: false, error: 'API endpoint not found' });
 });
 
