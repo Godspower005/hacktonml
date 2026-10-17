@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MessageSquare, Send, Sparkles, Database, AlertCircle, RefreshCw } from 'lucide-react';
 import type { AssistantChatResponse } from '../../lib/gemma';
+import { safeFetchJson } from '../utils/api';
 
 interface AiAssistantChatProps {
   onQuickFilter?: (query: string) => void;
@@ -29,17 +30,12 @@ export const AiAssistantChat: React.FC<AiAssistantChatProps> = () => {
     setError(null);
 
     try {
-      const res = await fetch('/api/ai/chat', {
+      const data = await safeFetchJson('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: q }),
       });
 
-      if (!res.ok) {
-        throw new Error(`HTTP Error ${res.status}`);
-      }
-
-      const data = await res.json();
       if (data.success && data.data) {
         setResponse(data.data);
       } else {

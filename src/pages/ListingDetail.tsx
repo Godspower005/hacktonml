@@ -9,6 +9,7 @@ import { loadSeeker } from '../state/session';
 import { haversineKm, type Property } from '../../lib/scoring';
 import { resolveWorkplace, type NeighborhoodReport, type SwotReport } from '../../lib/neighborhood';
 import type { WalkthroughFrame } from '../../lib/walkthrough';
+import { safeFetchJson } from '../utils/api';
 
 export default function ListingDetail() {
   const { id } = useParams();
@@ -22,30 +23,26 @@ export default function ListingDetail() {
 
   useEffect(() => {
     if (!id) return;
-    fetch(`/api/properties/${id}`)
-      .then((r) => r.json())
+    safeFetchJson(`/api/properties/${id}`)
       .then((d) => {
         if (!d.success) throw new Error('Listing not found');
         setProperty(d.data);
       })
       .catch((e) => setError(e.message));
 
-    fetch(`/api/listings/${id}/walkthrough`)
-      .then((r) => r.json())
+    safeFetchJson(`/api/listings/${id}/walkthrough`)
       .then((d) => d.success && setFrames(d.data))
       .catch(() => {});
 
-    fetch(`/api/listings/${id}/neighborhood`)
-      .then((r) => r.json())
+    safeFetchJson(`/api/listings/${id}/neighborhood`)
       .then((d) => d.success && setReport(d.data))
       .catch(() => {});
 
-    fetch(`/api/listings/${id}/swot`, {
+    safeFetchJson(`/api/listings/${id}/swot`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ profile }),
     })
-      .then((r) => r.json())
       .then((d) => d.success && setSwot(d.data))
       .catch(() => {});
   }, [id]);

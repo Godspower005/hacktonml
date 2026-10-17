@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Field, Layout, PrimaryButton, inputClass } from '../../components/Layout';
 import { COMMUTE_LANDMARKS } from '../../../lib/neighborhood';
 import { loadSeeker, saveSeeker } from '../../state/session';
+import { safeFetchJson } from '../../utils/api';
 
 export default function NeedsProfilePage() {
   const navigate = useNavigate();
@@ -26,8 +27,7 @@ export default function NeedsProfilePage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('/api/neighborhoods')
-      .then((r) => r.json())
+    safeFetchJson('/api/neighborhoods')
       .then((d) => {
         if (d.success && Array.isArray(d.data)) {
           setAreas(d.data.map((n: { name: string }) => n.name));

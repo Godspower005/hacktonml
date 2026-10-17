@@ -350,6 +350,24 @@ app.get('/api/cache-stats', (_req: Request, res: Response) => {
   }
 });
 
+// API 404 handler to prevent HTML responses for missing /api endpoints
+app.use('/api/*', (_req: Request, res: Response) => {
+  res.status(404).json({ success: false, error: 'API endpoint not found' });
+});
+
+// Express error handling middleware for API routes
+app.use((err: any, req: Request, res: Response, next: any) => {
+  if (req.path && req.path.startsWith('/api')) {
+    console.error('API Error:', err);
+    res.status(err.status || 500).json({
+      success: false,
+      error: err.message || 'Internal Server Error',
+    });
+    return;
+  }
+  next(err);
+});
+
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
