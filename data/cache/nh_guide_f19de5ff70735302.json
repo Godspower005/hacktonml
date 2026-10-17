@@ -1,0 +1,22 @@
+{
+  "neighborhood": "Old Bodija",
+  "summary": "Old Bodija remains one of Ibadan's most prestigious, leafy, and central residential enclaves, favored by civil servants, expatriates, and upper-middle-class families. While it boasts mature greenery, generous plot sizes, and peaceful streets, many properties are older builds undergoing modernization, sitting right beside increasingly commercialized avenues.",
+  "powerExpectations": "Old Bodija mostly runs on IBEDC Band A and Band B feeders, particularly those tied to the Secretariat and University of Ibadan grid lines, delivering an average of 14 to 20 hours daily. However, transformer tripping occurs during heavy downpours, so a minimum 2.5kVA inverter system or petrol generator remains non-negotiable for seamless remote work.",
+  "waterAndDrainage": "Sitting on a relatively elevated plateau, Old Bodija escapes the catastrophic flash flooding seen along the Eleyele or Odo-Ona basins, though poor roadside drainage on peripheral streets can cause localized ponding. Almost all houses rely on motorized boreholes (typically 40 to 60 meters deep); ensure your prospective compound has a functional filtration unit, as proximity to decades-old soakaways can affect groundwater purity.",
+  "securityAndNightMovement": "Most streets operate strict Community Development Association (CDA) gating policies, with inner gates locking firmly between 10:00 PM and 11:00 PM and requiring night guard clearance thereafter. Monthly vigilante/estate security dues run between ₦5,000 and ₦15,000, and police presence is solid due to the nearby Bodija Police Station and VIP residences.",
+  "transportationAndCommute": "Commuting is arguably the best in Ibadan: Dugbe is 15 minutes away, and the State Secretariat is under 7 minutes. Micra cabs are plentiful along Osuntokun Avenue and the UI–Secretariat axis, while Bolt and inDrive cabs arrive within 3 to 5 minutes anywhere in the neighborhood. Okada bikes are restricted from entering certain private closes.",
+  "localHotspots": [
+    "Cafe Chrysalis (Osuntokun Avenue)",
+    "Tamberma Restaurant & Bar",
+    "Ventura Mall (Samonda / Old Bodija border)",
+    "The Place Restaurant",
+    "Bodija Market (periphery for wholesale fresh food)"
+  ],
+  "tenantTips": [
+    "Differentiate between purely residential streets and commercial corridors like Osuntokun Avenue to avoid living next to lounges or event centers with night-long noise pollution.",
+    "Carefully inspect plumbing and electrical conduits in remodeled 1970s/1980s colonial houses; landlords often apply fresh paint over obsolete, brittle pipes and wiring.",
+    "Ask the street's CDA executive or neighbors directly about pending transformer development levies before paying the landlord, as new tenants are frequently blindsided with historical debt.",
+    "Confirm the exact water pumping schedule if moving into a multi-tenant apartment block, as shared borehole management often sparks friction."
+  ],
+  "source": "model"
+}

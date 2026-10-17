@@ -1,0 +1,191 @@
+[
+  {
+    "id": "old-bodija",
+    "name": "Old Bodija",
+    "lga": "Ibadan North",
+    "coordinates": {
+      "lat": 7.4326,
+      "lng": 3.9067
+    },
+    "vibe": "Upscale, established residential haven with quiet tree-lined avenues and top tier dining.",
+    "average_rent_2bed": 1800000,
+    "average_rent_3bed": 2800000,
+    "power_reliability": "High",
+    "power_hours_daily": "18-22 hours (Mostly Band A Feeder)",
+    "flood_risk": "Low (Elevated terrain)",
+    "road_condition": "Paved & well-maintained tarred roads",
+    "security_level": "High (Community gated checkpoints with night watch)",
+    "water_quality": "High (Deep boreholes with filtration)",
+    "transit_access": "Excellent. Easy Micra cabs to Secretariat, UI, and Mokola.",
+    "landmarks": ["Bodija Market", "Oyo State Secretariat", "Ventura Mall (Samonda nearby)", "Housing Estate Police Post"],
+    "insider_tips": "Old Bodija has significantly more serene plots and mature trees than New Bodija, which tends to be more commercial."
+  },
+  {
+    "id": "new-bodija",
+    "name": "New Bodija",
+    "lga": "Ibadan North",
+    "coordinates": {
+      "lat": 7.4255,
+      "lng": 3.9189
+    },
+    "vibe": "Energetic, lifestyle-oriented mix of residential apartments, modern lounges, supermarkets, and cafes.",
+    "average_rent_2bed": 1500000,
+    "average_rent_3bed": 2300000,
+    "power_reliability": "Moderate to High",
+    "power_hours_daily": "16-20 hours",
+    "flood_risk": "Low to Moderate near drainage lines",
+    "road_condition": "Tarred with occasional speed bumps",
+    "security_level": "Medium-High (Close knit streets with iron barrier gates closed at 10 PM)",
+    "water_quality": "Good borehole infrastructure",
+    "transit_access": "Very high, central location connecting to Secretariat and Sango.",
+    "landmarks": ["FoodCo Bodija", "Favor Ground", "Awolowo Avenue", "Finbarrs Road"],
+    "insider_tips": "Pay attention to proximity to commercial lounges if you prefer silence on weekends."
+  },
+  {
+    "id": "agodi-gra",
+    "name": "Agodi GRA",
+    "lga": "Ibadan North",
+    "coordinates": {
+      "lat": 7.4121,
+      "lng": 3.9114
+    },
+    "vibe": "Premier diplomatic and executive government residential area; quiet, leafy, and highly secure.",
+    "average_rent_2bed": 2500000,
+    "average_rent_3bed": 4000000,
+    "power_reliability": "Very High",
+    "power_hours_daily": "20-23 hours (Priority Government Feeder)",
+    "flood_risk": "Very Low (High elevation)",
+    "road_condition": "Smooth asphalt, wide boulevards",
+    "security_level": "Maximum (Heavy patrols, gated estate protocols)",
+    "water_quality": "High quality treated borehole systems",
+    "transit_access": "Strictly private or ride-hailing (Uber/Bolt) inside the estate.",
+    "landmarks": ["Government House", "Agodi Gardens", "Oyo High Court", "Carlton Gate Estate"],
+    "insider_tips": "Pedestrian commercial transit is restricted inside the GRA; owning a car or using ride hailing is typical."
+  },
+  {
+    "id": "iyaganku-gra",
+    "name": "Iyaganku GRA",
+    "lga": "Ibadan South-West",
+    "coordinates": {
+      "lat": 7.3778,
+      "lng": 3.8762
+    },
+    "vibe": "Aristocratic heritage neighborhood, lush hills, tranquil, and home to senior magistrates and corporate titans.",
+    "average_rent_2bed": 2200000,
+    "average_rent_3bed": 3500000,
+    "power_reliability": "Very High",
+    "power_hours_daily": "18-22 hours",
+    "flood_risk": "Low",
+    "road_condition": "Tarred, well preserved colonial layout",
+    "security_level": "Maximum (Iyaganku Police Command nearby, active gates)",
+    "water_quality": "High",
+    "transit_access": "Quick access to Ring Road, Dugbe CBD, and Lekan Salami Stadium.",
+    "landmarks": ["Iyaganku Police Division", "Oyo State High Court Judges Quarters", "Dugbe Central Business District"],
+    "insider_tips": "Excellent for professionals working in Dugbe or Ring Road who value tranquility."
+  },
+  {
+    "id": "oluyole-estate",
+    "name": "Oluyole Estate",
+    "lga": "Ibadan South-West",
+    "coordinates": {
+      "lat": 7.3592,
+      "lng": 3.8643
+    },
+    "vibe": "Vibrant, family-friendly modern hub with great dining, gyms, shopping centers, and tech companies.",
+    "average_rent_2bed": 1400000,
+    "average_rent_3bed": 2200000,
+    "power_reliability": "Moderate to High",
+    "power_hours_daily": "15-18 hours",
+    "flood_risk": "Low on high ground; check lower stream axis near industrial layout",
+    "road_condition": "Tarred major roads, interlocked estate closes",
+    "security_level": "High (Zonal resident associations with armed security guards)",
+    "water_quality": "Good borehole water",
+    "transit_access": "Directly accessible via Ring Road with abundant transport.",
+    "landmarks": ["Christie's Supermarket", "The Capital Building", "Ring Road Hub", "Lead City University proximity"],
+    "insider_tips": "Oluyole Estate Extension offers newer architectural finishes compared to the core Oluyole Estate."
+  },
+  {
+    "id": "jericho",
+    "name": "Jericho GRA",
+    "lga": "Ibadan North-West",
+    "coordinates": {
+      "lat": 7.3995,
+      "lng": 3.8687
+    },
+    "vibe": "Historic high-prestige residential enclave, peaceful, green, close to research institutes and premier schools.",
+    "average_rent_2bed": 2000000,
+    "average_rent_3bed": 3200000,
+    "power_reliability": "High",
+    "power_hours_daily": "17-21 hours",
+    "flood_risk": "Low",
+    "road_condition": "Paved asphalt with green verges",
+    "security_level": "High (Manned gates, private estate guards)",
+    "water_quality": "High (Clean treated boreholes)",
+    "transit_access": "5 minutes to Eleyele, Dugbe, and Onireke.",
+    "landmarks": ["Jericho Nursing Home", "All Saints Church School", "Forestry Research Institute (FRIN)"],
+    "insider_tips": "Jericho is one of the coolest micro-climates in Ibadan due to nearby forest reserves."
+  },
+  {
+    "id": "samonda-ui",
+    "name": "Samonda / Sango / UI",
+    "lga": "Ibadan North",
+    "coordinates": {
+      "lat": 7.4412,
+      "lng": 3.8965
+    },
+    "vibe": "Young, academic, tech-friendly innovation strip bustling with students, remote workers, and university staff.",
+    "average_rent_2bed": 950000,
+    "average_rent_3bed": 1600000,
+    "power_reliability": "Moderate",
+    "power_hours_daily": "14-17 hours",
+    "flood_risk": "Low on the ridges; moderate along stream channels",
+    "road_condition": "Tarred on main roads, graded on inner streets",
+    "security_level": "Moderate (Community security, vibrant night movement)",
+    "water_quality": "Boreholes and local water cart vendors",
+    "transit_access": "Unbeatable public transit connectivity (Micras, buses, tricycles).",
+    "landmarks": ["University of Ibadan First Gate", "Ventura Mall (Arcade & Cinema)", "The Polytechnic Ibadan", "Aerodrome Estate"],
+    "insider_tips": "Aerodrome Estate in Samonda is an exclusive gated enclave inside this vibrant corridor."
+  },
+  {
+    "id": "akobo",
+    "name": "Akobo / Oju-Irin",
+    "lga": "Lagelu",
+    "coordinates": {
+      "lat": 7.4485,
+      "lng": 3.9467
+    },
+    "vibe": "Fast developing middle-class residential area with spacious modern compounds, new duplexes, and growing schools.",
+    "average_rent_2bed": 1100000,
+    "average_rent_3bed": 1800000,
+    "power_reliability": "Moderate",
+    "power_hours_daily": "14-18 hours",
+    "flood_risk": "Low to Moderate (Always verify culvert quality during rainy season)",
+    "road_condition": "Good on the dualized General Gas flyover axis; inner roads mixed",
+    "security_level": "Moderate to High in private estates (e.g., Kolapo Ishola Estate)",
+    "water_quality": "Borehole with booster pump common",
+    "transit_access": "Great connectivity via General Gas flyover and Iwo Road link.",
+    "landmarks": ["General Gas Flyover", "Kolapo Ishola GRA", "Ibadan North-East border", "Valencia College"],
+    "insider_tips": "Properties located within Kolapo Ishola Estate command premium GRA-level rents and security."
+  },
+  {
+    "id": "alalubosa-gra",
+    "name": "Alalubosa GRA",
+    "lga": "Ibadan South-West",
+    "coordinates": {
+      "lat": 7.3715,
+      "lng": 3.8582
+    },
+    "vibe": "Ultra-modern luxury gated community with contemporary mansions, strict access gates, and serene lake views.",
+    "average_rent_2bed": 2600000,
+    "average_rent_3bed": 4500000,
+    "power_reliability": "High to Very High",
+    "power_hours_daily": "18-22 hours",
+    "flood_risk": "Low (Engineered drainage system)",
+    "road_condition": "Fully interlocked roads and underground drainage",
+    "security_level": "Maximum (CCTV monitored entrance, biometric pass for visitors)",
+    "water_quality": "Very High",
+    "transit_access": "Quick access to Aleshinloye Market, Ring Road, and Eleyele.",
+    "landmarks": ["Alalubosa Lake", "Aleshinloye Ultra Modern Market", "Railway Terminal proximity"],
+    "insider_tips": "One of the most modern GRA developments in Oyo State with uniform estate aesthetics."
+  }
+]

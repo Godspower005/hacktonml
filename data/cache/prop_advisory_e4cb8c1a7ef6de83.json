@@ -1,0 +1,23 @@
+{
+  "propertyId": "ib-bod-001",
+  "advisoryTitle": "Pre-Tenancy Due Diligence & Physical Inspection Advisory: Old Bodija Flat",
+  "whatToVerifyOnSite": [
+    "Input test codes on the prepaid meter interface (CIU) to confirm true unit credit balance, inspect for illegal bypasses, and crosscheck the physical meter number against IBEDC database records.",
+    "Run water into a clean white container from multiple taps to inspect for iron rust, cloudiness, or sulfur odor, and visually verify the filtration media in the double-tank setup.",
+    "Inspect the inverter setup, confirming battery type (tubular vs. lithium), date of installation, and execute a manual grid cut-off to test automated load transfer and sustained runtime.",
+    "Examine all burglar-proofing welds, window netting integrity against mosquitoes, and check ceilings/walls for hidden damp patches beneath fresh repainting.",
+    "Inspect bathroom gully traps, test water pressure with multiple taps running, and ensure the soakaway and compound drainage channels are clear of debris."
+  ],
+  "hiddenCostChecklist": [
+    "IBEDC Prepaid Meter Arrears: Visit the Bodija IBEDC business hub to confirm the meter carries no inherited debt or unbilled estimated migration backlog.",
+    "Old Bodija CDA & Security Dues: Clarify whether estate gate access, day/night vigilante levies, and recurring transformer maintenance are bundled into the ₦300,000 service charge.",
+    "Service Charge Breakdown: Secure an itemized service level agreement (SLA) clarifying shared inverter maintenance, water pumping schedules, and Oyo State Waste Management Authority (OYOWMA) fees.",
+    "Legal and Agreement Surcharges: Confirm whether stamp duty, tenancy registration, or inventory documentation fees are tucked into the legal fee draft."
+  ],
+  "negotiationTips": [
+    "Cap Agency and Legal fees strictly at 10% each of annual rent (₦260k maximum per professional), resisting the typical 20% markup common among middlemen in Bodija.",
+    "Use the Band A power declaration to negotiate the service charge, stipulating that shared diesel generator fueling must be reduced proportionally given the mandatory 20+ hours of daily grid power.",
+    "Insist on an agreed, signed move-in condition inventory alongside the ₦200,000 caution fee receipt to legally safeguard your refund when moving out."
+  ],
+  "source": "model"
+}

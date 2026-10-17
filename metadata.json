@@ -1,0 +1,6 @@
+{
+  "name": "Ibadan AI House Hunting Assistant",
+  "description": "Open source AI house hunting assistant for Ibadan, Nigeria featuring neighborhood insights, transparent scoring, and interactive Leaflet maps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
